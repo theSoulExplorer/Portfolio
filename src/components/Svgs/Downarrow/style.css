@@ -1,0 +1,23 @@
+.downarrow{
+    height: 24px;
+    width: 24px;
+    animation: downMovement 3s linear infinite;
+}
+
+@keyframes downMovement {
+    0%{
+        transform:translate(0,-5px);
+    }
+    25%{
+        transform: translate(0, 0px);
+    }
+    50%{
+        transform: translate(0, 5px);
+    }
+    75%{
+        transform: translate(0, 0px);
+    }
+    100%{
+        transform: translate(0, -5px);
+    }
+}

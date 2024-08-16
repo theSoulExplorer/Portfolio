@@ -1,3 +1,16 @@
 @media ((min-width:0px) and (max-width: 767px)) {}
-@media (min-width: 768px) and (max-width: 1280px) {}
+@media (min-width: 768px) and (max-width: 1280px) {
+    .menuIcon{
+        width: 28px;
+        height: 28px;
+        transform: scale(0.8);
+        stroke: rgba(0,0,0,.4);
+        transition: all 0.2s linear;
+    }
+    .contactIcon{
+        width: 30px;
+        height: 30px;
+        transform: scale(0.8);
+    }
+}
 @media (min-width: 1281px) {}

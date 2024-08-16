@@ -16,7 +16,9 @@ function Home() {
           </div>
         </div>
         <div className="home_scroll w-full p-2 flex justify-center items-center">
-          <Downarrow />
+          <div className='h-fit w-fit cursor-pointer' onClick={(e) => {window.scrollTo(0,window.innerHeight)}}>
+            <Downarrow />
+          </div>
         </div>
       </div>
     </>

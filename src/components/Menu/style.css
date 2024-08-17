@@ -8,6 +8,10 @@
     cursor: pointer;
 }
 
+.active > svg{
+    stroke: black;
+}
+
 .menuDiv > div:hover > svg{
     stroke: black;
 }

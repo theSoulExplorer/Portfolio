@@ -4,8 +4,8 @@ import { Downarrow } from '../Svgs';
 
 function Home() {
   return (
-    <div className="section border-2 border-blue-600 home_container h-screen w-full box-border flex flex-col justify-between items-center overflow-hidden">
-      <div className="kuchbhi border-2 border-black w-full p-2 invisible"></div>
+    <div className="section home_container h-screen w-full box-border flex flex-col justify-between items-center overflow-hidden">
+      <div className="kuchbhi w-full p-2 invisible"></div>
       <div className="home_parent_name w-full h-fit">
         <div className="home_watermarkname w-full h-fit flex justify-center">
           AMAN SHARMA

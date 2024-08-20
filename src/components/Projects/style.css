@@ -1,4 +1,15 @@
 @media ((min-width:0px) and (max-width: 767px)) {
+    .project_name{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .project_desc{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+    }
     .projectOuterContainer {
             padding-top: 18%;
         }
@@ -8,7 +19,7 @@
     .project_heading {
             height: fit-content;
             width: fit-content;
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 800;
             letter-spacing: 10px;
             text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
@@ -17,7 +28,7 @@
         }
     
         .project_content {
-            margin-top: 15%;
+            margin-top: 10%;
             padding: 40px;
             position: relative;
             left: 42%;
@@ -48,9 +59,9 @@
     
         .eachProjectDiv {
             width: 300px;
-            height: 150px;
-            margin-left: 10px;
-            margin-right: 10px;
+            height: auto;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     
         .eachProjectDiv>h3 {
@@ -61,7 +72,7 @@
     
         .project_img {
             width: 100%;
-            height: 100%;
+            height: 23vh;
         }
     
         @keyframes hi {
@@ -88,6 +99,12 @@
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+    .project_name{
+        display: none;
+    }
+    .project_desc{
+        display: none;
+    }
     .projectOuterContainer {
             padding-top: 7%;
         }
@@ -175,6 +192,12 @@
 }
 
 @media (min-width: 1281px) {
+    .project_name{
+        display: none;
+    }
+    .project_desc{
+        display: none;
+    }
     .projectOuterContainer{
         padding-top: 7%;
     }

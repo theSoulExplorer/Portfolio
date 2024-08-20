@@ -56,7 +56,7 @@ function App() {
         let xx = skill.getBoundingClientRect().x + skill.offsetWidth/2;
         let mid = window.innerWidth/2;
         let diff = Math.abs(mid - xx);
-        let xPerc = 100 - (100*diff)/mid;
+        let xPerc = 100 - (100*diff)/(2*mid);
         xPerc = xPerc.toFixed(3);
         xPerc = Math.min(100, xPerc);
         xPerc = Math.max(60, xPerc);
@@ -79,11 +79,11 @@ function App() {
         let xx = project.getBoundingClientRect().x + project.offsetWidth / 2;
         let mid = window.innerWidth / 2;
         let diff = Math.abs(mid - xx);
-        let proxPerc = 100 - (100 * diff) / mid;
+        let proxPerc = 100 - (100 * diff) / (2*mid);
         proxPerc = proxPerc.toFixed(3);
         proxPerc = Math.min(100, proxPerc);
         proxPerc = Math.max(50, proxPerc);
-        // project.style.transform = `scale(${proxPerc / 100})`;
+        project.style.transform = `scale(${proxPerc / 100})`;
         project.style.filter = `grayscale(${100 - proxPerc}%)`;
       }
     });
@@ -98,8 +98,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      {/* <Achievements />
-      <Footer /> */}
+      <Achievements />
+      <Footer />
       {/* </div> */}
     </>
   );

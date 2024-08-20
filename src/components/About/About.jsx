@@ -3,7 +3,7 @@ import './style.css'
 
 function About() {
   return (
-    <div className="w-full h-screen box-border about_container border-2 border-pink-600">
+    <div className="w-full h-screen box-border about_container">
       <div className="about_heading">
         <div className="hiEmoji">👋</div>HELLO,
       </div>

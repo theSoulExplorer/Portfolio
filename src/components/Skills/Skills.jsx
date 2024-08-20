@@ -4,10 +4,10 @@ import { Cpp, Css, Express, Git, Html, Javascript, Mongodb, Mysql, Nextjs, Nodej
 
 function Skills() {
   return (
-    <div className="section skillOuterContainer w-full h-[450vh] box-border pt-[7%]">
-      <div className="skillInnerContainer w-full h-screen bg-white sticky top-[7%] overflow-x-hidden box-border">
+    <div className="section skillOuterContainer w-full h-[450vh] box-border">
+      <div className="skillInnerContainer w-full h-screen bg-white sticky overflow-x-hidden box-border">
         <div className="skill_heading box-border">
-          <div className="brainEmoji">🧠</div>SKILLS
+          <div className="brainEmoji">🔥</div>SKILLS
         </div>
         <div className="skill_content w-fit flex box-border">
           <div className="eachSkillDiv">

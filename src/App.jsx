@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { About, Home, Menu, Skills } from "./components"
+import { About, Achievements, Footer, Home, Menu, Projects, Skills } from "./components"
 
 function App() {
 
@@ -10,6 +10,9 @@ function App() {
       const skillInnerContainer = document.getElementsByClassName("skillInnerContainer")[0];
       const skillOuterContainer = document.getElementsByClassName("skillOuterContainer")[0];
       const skillContent = document.getElementsByClassName("skill_content")[0];
+
+      const projectOuterContainer = document.getElementsByClassName("projectOuterContainer")[0];
+      const projectContent = document.getElementsByClassName("project_content")[0];
 
       let ind = secs.length;
       for(let i=0;i<secs.length;i++){
@@ -26,6 +29,7 @@ function App() {
 
 
       const skills = document.getElementsByClassName("eachSkillDiv");
+      const projects = document.getElementsByClassName("eachProjectDiv");
       // const ww = skillContent.offsetWidth;
       // console.log("1",skillInnerContainer.getBoundingClientRect().y);
       // console.log("2",skillOuterContainer.getBoundingClientRect().y);
@@ -59,17 +63,46 @@ function App() {
         skill.style.transform = `scale(${xPerc/100})`;
         skill.style.filter = `grayscale(${100-xPerc}%)`;
       }
+
+
+      let projectOffsetSkill = projectOuterContainer.getBoundingClientRect().y;
+      let proTot = window.innerHeight - projectOuterContainer.offsetHeight;
+
+      let properc = (projectOffsetSkill / proTot) * 100;
+      properc = properc.toFixed(3);
+      properc = Math.min(100, properc);
+      properc = Math.max(0, properc);
+      projectContent.style.transform = `translateX(-${properc}%)`;
+
+      for (let i = 0; i < projects.length; i++) {
+        let project = projects[i];
+        let xx = project.getBoundingClientRect().x + project.offsetWidth / 2;
+        let mid = window.innerWidth / 2;
+        let diff = Math.abs(mid - xx);
+        let proxPerc = 100 - (100 * diff) / mid;
+        proxPerc = proxPerc.toFixed(3);
+        proxPerc = Math.min(100, proxPerc);
+        proxPerc = Math.max(50, proxPerc);
+        // project.style.transform = `scale(${proxPerc / 100})`;
+        project.style.filter = `grayscale(${100 - proxPerc}%)`;
+      }
     });
   },[]);
 
   return (
     <>
-      <Menu />
-      <Home />
+      
+      {/* <div className="main_container w-full "> */}
+        <Menu />
+        <Home />
       <About />
       <Skills />
+      <Projects />
+      {/* <Achievements />
+      <Footer /> */}
+      {/* </div> */}
     </>
-  )
+  );
 }
 
 export default App

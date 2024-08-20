@@ -1,47 +1,172 @@
-.about_heading{
-    height: fit-content;
-    width: fit-content;
-    font-size: 108px;
-    font-weight: 800;
-    letter-spacing: 10px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
-    padding-left: 25px;
-    /* border: 1px solid black; */
+@media ((min-width:0px) and (max-width: 767px)) {
+    .about_container{
+        padding-top: 50%;
+    }
+    .about_heading {
+            height: fit-content;
+            width: fit-content;
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 10px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
+            padding-left: 25px;
+            /* border: 1px solid black; */
+        }
+    
+        .about_content {
+            height: fit-content;
+            width: fit-content;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            margin-top: 20%;
+            /* border: 1px solid black; */
+        }
+    
+        .hiEmoji {
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            transform-origin: 80% 80%;
+            /* animation: hi 2s linear infinite; */
+        }
+    
+        @keyframes hi {
+            0% {
+                transform: rotateZ(5deg);
+            }
+    
+            25% {
+                transform: rotateZ(0deg);
+            }
+    
+            50% {
+                transform: rotateZ(-5deg);
+            }
+    
+            75% {
+                transform: rotateZ(0deg);
+            }
+    
+            100% {
+                transform: rotateZ(5deg);
+            }
+        }
 }
 
-.about_content{
-    height: fit-content;
-    width: fit-content;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding-left: 50px;
-    margin-top: 20px;
-    /* border: 1px solid black; */
+@media (min-width: 768px) and (max-width: 1280px) {
+    .about_container {
+            padding-top: 10%;
+        }
+    .about_heading {
+            height: fit-content;
+            width: fit-content;
+            font-size: 108px;
+            font-weight: 800;
+            letter-spacing: 10px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
+            padding-left: 25px;
+            /* border: 1px solid black; */
+        }
+    
+        .about_content {
+            height: fit-content;
+            width: fit-content;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            margin-top: 20px;
+            /* border: 1px solid black; */
+        }
+    
+        .hiEmoji {
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            transform-origin: 80% 80%;
+            /* animation: hi 2s linear infinite; */
+        }
+    
+        @keyframes hi {
+            0% {
+                transform: rotateZ(5deg);
+            }
+    
+            25% {
+                transform: rotateZ(0deg);
+            }
+    
+            50% {
+                transform: rotateZ(-5deg);
+            }
+    
+            75% {
+                transform: rotateZ(0deg);
+            }
+    
+            100% {
+                transform: rotateZ(5deg);
+            }
+        }
 }
 
-.hiEmoji{
-    width: fit-content;
-    height: fit-content;
-    display: inline-block;
-    transform-origin: 80% 80%;
-    /* animation: hi 2s linear infinite; */
+@media (min-width: 1281px) {
+    .about_container {
+            padding-top: 10%;
+        }
+    .about_heading {
+            height: fit-content;
+            width: fit-content;
+            font-size: 108px;
+            font-weight: 800;
+            letter-spacing: 10px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
+            padding-left: 25px;
+            /* border: 1px solid black; */
+        }
+    
+        .about_content {
+            height: fit-content;
+            width: fit-content;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding-left: 50px;
+            margin-top: 20px;
+            /* border: 1px solid black; */
+        }
+    
+        .hiEmoji {
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            transform-origin: 80% 80%;
+            /* animation: hi 2s linear infinite; */
+        }
+    
+        @keyframes hi {
+            0% {
+                transform: rotateZ(5deg);
+            }
+    
+            25% {
+                transform: rotateZ(0deg);
+            }
+    
+            50% {
+                transform: rotateZ(-5deg);
+            }
+    
+            75% {
+                transform: rotateZ(0deg);
+            }
+    
+            100% {
+                transform: rotateZ(5deg);
+            }
+        }
 }
 
-@keyframes hi{
-    0%{
-        transform: rotateZ(5deg);
-    }
-    25%{
-        transform: rotateZ(0deg);
-    }
-    50%{
-        transform: rotateZ(-5deg);
-    }
-    75%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(5deg);
-    }
-}
+
